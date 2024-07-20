@@ -1,4 +1,7 @@
-// Function to handle form submission
-function submitForm() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your message!');
+        form.reset();
+    });
